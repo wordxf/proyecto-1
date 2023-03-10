@@ -160,14 +160,28 @@ p, a{
 /*contenido del encabezado*/
 
 
+.texto-encabezado h1{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azulOscuro);
+    padding-top: 8rem;
+}
+
+.texto-encabezado h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azulOscuro);
+    padding-top: 8rem;
+}
+
 .formulario-encabezado{
-    background-color: var(rgba(0, 0, 0, 0.45));
+    background-color: var(--blanco);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: auto;
+    padding: 100px;
     border-radius: 5rem;
-    margin: 50px auto auto auto;
+    margin: auto auto auto auto;
 }
 .formulario-encabezado h1{
     font-size: auto;
