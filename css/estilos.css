@@ -37,9 +37,10 @@ p, a{
     width: 95%;
 }
 .btn{
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-family: (var(--parrafos));
+    font-size: 1.5rem;
     border: none;
     color: var(--blanco);
 }
@@ -80,7 +81,7 @@ p, a{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 .logo h2{
@@ -95,7 +96,7 @@ p, a{
     align-items: center;
     justify-content: space-around;
     background-color: var(--blanco);
-    box-shadow: 10px 10px 16px -6px rgb(0,0,0,0.45);
+    box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.45);
 }
 
 .navegacion{
@@ -159,18 +160,27 @@ p, a{
 
 /*contenido del encabezado*/
 
-
+@media(min-width: 768px) {
+    .contenido-encabezado  {
+        display: flex;
+        align-items: center;
+        height: 85%;
+    }
+    .contenido-encabezado, .formulario-encabezado{
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
 .texto-encabezado h1{
     font-size: 3rem;
     text-align: center;
-    color: var(--azulOscuro);
+    color: var(--blanco);
     padding-top: 8rem;
 }
 
 .texto-encabezado h2{
     font-size: 3rem;
     text-align: center;
-    color: var(--azulOscuro);
+    color: var(--blanco);
     padding-top: 8rem;
 }
 
@@ -179,16 +189,16 @@ p, a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 5rem;
     border-radius: 5rem;
-    margin: auto auto auto auto;
 }
-.formulario-encabezado h1{
-    font-size: auto;
+.formulario-encabezado h2{
+    font-size: 3rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0;
     font-family: var(--titulos);
 }
+
 .boton-encabezado{
     margin-bottom: 2rem;
     width: auto;
@@ -196,3 +206,9 @@ p, a{
     height: center;
     font-family: var(--parrafos);
 }
+
+.contenedor span{
+    color: blue;
+    font-size: 30px;
+}
+
